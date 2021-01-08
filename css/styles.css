@@ -14,10 +14,21 @@
 .mouse {
     margin-top: 30vh;
 }
-.card1 {
+.card {
     text-align: center;
     position: absolute;
+    /* height: 25vh; */
 }
-.contact {
+.contactz {
     background-image: url('../images/header.jpeg');
+    /* background-size: 45vh; */
+    background-repeat: no-repeat;
+    height: 500px;
+}
+.meals {
+    position: absolute;
+}
+
+.footer{
+    text-align: center;
 }
