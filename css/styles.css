@@ -1,0 +1,23 @@
+.header2021 {
+    background-image: url('../images/header2.jpeg');
+    height: 90vh;
+    
+}
+.welcome {
+    position: absolute;
+    top: 30vh;
+    left: 38%;
+    text-align: center;
+    color: black;
+    font-size: 100px;
+}
+.mouse {
+    margin-top: 30vh;
+}
+.card1 {
+    text-align: center;
+    position: absolute;
+}
+.contact {
+    background-image: url('../images/header.jpeg');
+}
