@@ -18,11 +18,11 @@
     text-align: center;
     /* height: 25vh; */
 }
-/* .contactz {
+.contactz {
     background-image: url('../images/header.jpeg');
     background-repeat: no-repeat;
-    height: 500px;
-} */
+    height: 400px;
+}
 .col {
     border: 12px black;
 }
