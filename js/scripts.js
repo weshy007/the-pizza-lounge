@@ -1,15 +1,21 @@
+// $(document).ready(function() {
+//     $(".mouse").click(function() {
+//       $(".formzi").slideToggle();
+//       $(".formzi").slideToggle();
+//     });
+
 var OrderNew = [];
-function Pizza(pizzaSize,pizzaCrust,pizzaTopping, PizzaNumber) {
-    this.pizzaSize= pizzaSize;
-    this.pizzaCrust=pizzaCrust;
-    this.pizzaTopping=pizzaTopping;
-    this.PizzaNumber=PizzaNumber;
+function Pizza(pizzaSize, pizzaCrust, pizzaTopping, pizzaNumber) {
+    this.pizzaSize = pizzaSize;
+    this.pizzaCrust = pizzaCrust;
+    this.pizzaTopping = pizzaTopping;
+    this.pizzaNumber = pizzaNumber;
 }
-var pizzaPrice= [1100,550,350,]
-Pizza.prototype.totalPrice = function(){
-    return (this.pizzaCrust + this.pizzaTopping + this.pizzaSize) * this.PizzaNumber
+var pizzaPrice= [1100, 550, 350]
+Pizza.prototype.totalPrice = function() {
+    return (this.pizzaCrust + this.pizzaTopping + this.pizzaSize) * this.pizzaNumber
 };
-Pizza.prototype.pizzaS = function () {
+Pizza.prototype.pizzaSz = function () {
     if (this.pizzaSize == 1100) {
         return "Large"
     } 
@@ -21,7 +27,7 @@ Pizza.prototype.pizzaS = function () {
     }
 }
 
-Pizza.prototype.pizzaC = function () {
+Pizza.prototype.pizzaCr = function () {
     if (this.pizzaCrust == 200) {
         return "Crispy"
     } 
@@ -33,7 +39,7 @@ Pizza.prototype.pizzaC = function () {
     }
 }
 
-Pizza.prototype.pizzaT =function(){
+Pizza.prototype.pizzaTp =function(){
     if (this.pizzaTopping == 150){
         return "Beef"
     }
@@ -58,4 +64,4 @@ $("#checkout").click(function (event) {
     OrderNew.push(newPizzae);
     console.log(OrderNew)
 
-}
+});
