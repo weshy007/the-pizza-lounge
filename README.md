@@ -22,7 +22,7 @@ So that is `git clone https://github.com/weshy007/the-pizza-lounge.git`
 
 ## License 
 This project is licenced under the MIT Licence - see the [LICENCE](https://github.com/weshy007/the-pizza-lounge/blob/master/LICENCE "Licence") file for details 
-- copyright 2020 - Waithaka Waweru 
+- copyright 2021 - Waithaka Waweru 
 
 ## Acknowledgements
 Technical mentors for being supportive.

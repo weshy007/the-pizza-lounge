@@ -24,7 +24,7 @@
         <h3>Order Your Meal</h3>
             <div class="form-group col-md-4">
                 <label for="inputState">Size</label>
-                <select id="inputState" class="form-control" id="size">
+                <select class="form-control" id="size">
                   <option selected>Choose...</option>
                   <option>Large</option>
                   <option>Medium</option>
@@ -34,7 +34,7 @@
 
             <div class="form-group col-md-4">
                 <label for="inputState">Crust</label>
-                <select id="inputState" class="form-control" id="crust">
+                <select class="form-control" id="crust">
                   <option selected>Choose...</option>
                   <option>Crispy</option>
                   <option>Stuffed</option>
@@ -44,7 +44,7 @@
 
             <div class="form-group col-md-4">
               <label for="inputState">Topping</label>
-              <select id="inputState" class="form-control" id="topping">
+              <select class="form-control" id="topping">
                 <option selected>Choose...</option>
                 <option>Beef</option>
                 <option>Sausage</option>
@@ -84,14 +84,28 @@
             <div lass="form-group col-md-4">
                 <form id="locationForm" class="formzi">
                     <h3>If Delivery, Enter...</h3>
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                         <label>Location</label>
                         <input type="text" class="form-control" id="location" placeholder="Enter Your Area Name">
+                    </div> -->
+
+                    <div class="form-group col-md-4">
+                        <div class="form-group">
+                            <label for="">Location </label>
+                            <input type="text" class="form-control" id="location" placeholder="Enter Your Area">
+                        </div>
+                        <div>
+                            <label for="">Phone Number</label>
+                            <input type="text" id="mobilenumb" class="form-control mb-3" placeholder="Enter Your Mobile Number">
+                        </div>
+                        <!-- <button type="button" class="btn btn-secondary" id="checkout">Order</button> -->
                     </div>
-                    <div class="form-group">
+
+
+                    <!-- <div class="form-group">
                         <label for="exampleFormControlSelect1">Phone Number</label>
                         <input type="text" class="form-control" id="mobilenumb" placeholder="Enter Your Mobile Number">
-                    </div>
+                    </div> -->
         ​            <button type="submit" class="btn btn-secondary" id="submit" >Submit</button>
                 </form>
             
