@@ -1,7 +1,6 @@
 .header2021 {
     background-image: url('../images/header2.jpeg');
-    height: 90vh;
-    
+    height: 90vh;   
 }
 body {
     font-family: 'Yusei Magic', sans-serif;
@@ -19,7 +18,6 @@ body {
 }
 .card, .plans {
     text-align: center;
-    /* height: 25vh; */
 }
 .contactz {
     background-image: url('../images/header.jpeg');
@@ -31,10 +29,7 @@ body {
 }
 .formzi {
     width: 80%;
-    /* display: none; */
 }
-
-
 .footer{
     text-align: center;
 }
