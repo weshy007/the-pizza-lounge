@@ -22,7 +22,7 @@ You can check the end product on [Github Deployment](https://weshy007.github.io/
 - After ordering the the ordered list appers below with the total amount
 
 ## Bugs Noticed
-- The delivery option is failing
+- The delivery option is failing and fee not appending in total
 - The list isn't showing the number of pizzas ordered
 
 ## License 
