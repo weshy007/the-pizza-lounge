@@ -3,6 +3,9 @@
     height: 90vh;
     
 }
+body {
+    font-family: 'Yusei Magic', sans-serif;
+}
 .welcome {
     position: absolute;
     top: 30vh;

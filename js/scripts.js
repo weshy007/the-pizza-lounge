@@ -83,12 +83,12 @@ $("#checkout").click(function (event) {
         $("#form-heading").append("Make A New Order");
     }
 
-    $("#totalAmount").fadeIn();
-    $("#Checkout").fadeIn();
-    $("#orderClass").fadeIn();
+    // $("#totalAmount").fadeIn();
+    // $("#Checkout").fadeIn();
+    // $("#orderClass").fadeIn();
     $("#totalAmount").empty();
     $("#totalAmount").append(totalAmount);
-    $("#totalAmount").show();
+    // $("#totalAmount").show();
   });
 
   $("#Checkout").click(function () {
@@ -102,20 +102,20 @@ $("#checkout").click(function (event) {
   NameOfCustomer = name;
   $("#name").val("");
   $("#OptionDelivery").val("");
-  $(".checkout-info").hide();
-  $("#Checkout").hide();
+//   $(".checkout-info").hide();
+//   $("#Checkout").hide();
   $("#totalAmount").empty();
   
   if (deliveryOption === "deliver") {
-    $(".deliveryLocation").show();
-    $(".deliveryCost").show();
+    // $(".deliveryLocation").show();
+    // $(".deliveryCost").show();
     $("#totalAmount").empty();
     $("#delivery-cost").append(250);
     totalAmount += 250;
     $("#totalAmount").empty();
     $("#totalAmount").empty();
   $("#totalAmount").append(totalAmount);
-  $(".TotalAmount").show();
+//   $(".TotalAmount").show();
   } 
   else {
     alert(+"Dear Customer, " + ": Your total bill is Ksh. " + totalAmount + ".Collect your order in the next 20 minutes." + " Your Tag Name is " + NameOfCustomer);
@@ -128,10 +128,10 @@ $("#checkout").click(function (event) {
   var mobileEntered = $("#mobilenumb").val();
   location = locationEntered;
   mobileNumb = mobileEntered;
-  $("#Checkout").hide();
-  $(".deliveryLocation").hide();
+//   $("#Checkout").hide();
+//   $(".deliveryLocation").hide();
   $("#totalAmount").empty();
   $("#totalAmount").append(totalAmount);
-  $(".TotalAmount").show();
+//   $(".TotalAmount").show();
   alert("Dear Customer"  + ": Your new total bill is Ksh. " + totalAmount + ". Your order will be delivered in the next one hour." + " Payment on delivery!!.");
   });
