@@ -77,23 +77,23 @@
             </div>
     </form>
 
-            <div lass="form-group col-md-4">
-                <form id="locationForm" class="formzi">
-                    <h3>If Delivery, Enter...</h3>
-                    <div class="form-group col-md-4">
-                        <div class="form-group">
-                            <label for="">Location </label>
-                            <input type="text" class="form-control" id="location" placeholder="Enter Your Area">
-                        </div>
-                        <div>
-                            <label for="">Phone Number</label>
-                            <input type="text" id="mobilenumb" class="form-control mb-3" placeholder="Enter Your Mobile Number">
-                        </div>
-                    </div>
-        ​            <button type="submit" class="btn btn-secondary" id="submit" >Submit</button>
-                </form>
-            
-            <div class="container">
+    <div lass="form-group col-md-4">
+        <form id="locationForm" class="formzi">
+          <h3>If Delivery, Enter...</h3>
+            <div class="form-group col-md-4">
+                <div class="form-group">
+                    <label for="">Location </label>
+                    <input type="text" class="form-control" id="location" placeholder="Enter Your Area">
+                </div>
+                <div>
+                    <label for="">Phone Number</label>
+                    <input type="text" id="mobilenumb" class="form-control mb-3" placeholder="Enter Your Mobile Number">
+                </div>
+            </div>
+        ​    <button type="submit" class="btn btn-secondary" id="submit" >Submit</button>
+        </form>
+        
+        <div class="container">
             <div class="col-sm-7" id="orderClass">
             <div class="orderList">
                 <h2>Your Order is:</h2>
@@ -108,21 +108,20 @@
                             </tr>
                         </thead>
                         <tbody id="ordersTaken">
-
+                            <!--The Table Appers here-->
                         </tbody>
                     </table>
-                        <p class="TotalAmount hidden">
-                            Total: Ksh. <span id="totalAmount"></span>
-                        </p>
-                        <p class="deliveryCost hidden">
-                            Delivery Cost: Ksh. <span id="delivery-cost"></span>
-                        </p>
-                        <button class="btn btn-secondary" id="checkout" onclick="">Checkout</button> <br>
+                    <p class="totalWithoutDel">
+                        Total: Ksh. <span id="totalAmount"></span>
+                    </p>
+                    <p class="deliveryCost hidden">
+                        Delivery Cost: Ksh. <span id="delivery-cost"></span>
+                    </p>
+                    <button class="btn btn-secondary" id="checkout" onclick="">Checkout</button> <br>
                 </div>
             </div>
             </div>
-            </div>
-
+        </div>
 
     <div class="card">
         <div class="card-body">
