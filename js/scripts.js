@@ -90,13 +90,13 @@ $("#order").click(function (event) {
   $("#name").val("");
   $("#deliveryOption").val("");
 
-  if (deliveryOption === "deliver") {
+  if (deliveryOption === "delivery") {
     $("#delivery-cost").append(250);
     totalAmount += 250;
     $("#totalAmount").append(totalAmount);
   } 
   else {
-    alert(+ "Dear Customer, " + " your total bill is Ksh. " + totalAmount + " Collect your order in the next 20 minutes." + " Your Tag Name is " + NameOfCustomer);
+    alert(+ "Dear Customer, your total bill is Ksh. " + totalAmount + " Collect your order in the next 20 minutes." + " Your Tag Name is " + NameOfCustomer);
   }
   });
   $("#locationForm").submit(function (event) {
