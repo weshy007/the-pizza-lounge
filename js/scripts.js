@@ -5,57 +5,53 @@ function Pizza(pizzaSize, pizzaCrust, pizzaTopping, pizzaNumber) {
     this.pizzaTopping = pizzaTopping;
     this.pizzaNumber = pizzaNumber;
 }
-var pizzaPrice= [1100, 550, 350]
+var pizzaPrice= [1100, 650, 350]
 Pizza.prototype.totalPrice = function() {
     return (this.pizzaCrust + this.pizzaTopping + this.pizzaSize) * this.pizzaNumber
 };
 Pizza.prototype.pizzaSz = function () {
     if (this.pizzaSize == 1100) {
-        return "Large"
+        return "Large "
     } 
-    else if (this.pizzaSize == 550) {
-        return "Medium"
+    else if (this.pizzaSize == 650) {
+        return "Medium "
     } 
     else if (this.pizzaSize == 350) {
-        return "Small"
+        return "Small "
     }
 }
-
 Pizza.prototype.pizzaCr = function () {
     if (this.pizzaCrust == 200) {
-        return "Crispy"
+        return "Crispy "
     } 
     else if (this.pizzaCrust == 250) {
-        return "Stuffed"
+        return "Stuffed "
     } 
     else if (this.pizzaCrust == 300) {
-        return "Glutten Free"
+        return "Glutten Free "
     }
 }
-
 Pizza.prototype.pizzaTp =function(){
     if (this.pizzaTopping == 150){
-        return "Beef"
+        return "Beef "
     }
     else if (this.pizzaTopping == 170){
-        return "Sausage"
+        return "Sausage "
     }
     else if ( this.pizzaTopping == 200){
-        return"Chicken"
+        return"Chicken "
     }
 }
-
-$("#checkout").click(function (event) {
+$("#order").click(function (event) {
     
     var PizzaSize = parseInt( $("#size").val());
     var PizzaCrust = parseInt( $("#crust").val());
     var PizzaTopping =parseInt( $("#topping").val());
     var PizzaNumber =parseInt( $("#number").val());
-    var newPizzae = new Pizza(PizzaSize, PizzaCrust, PizzaTopping, PizzaNumber); 
+    var newPizz = new Pizza(PizzaSize, PizzaCrust, PizzaTopping, PizzaNumber); 
     
-    console.log(newPizzae)
-    
-    OrderNew.push(newPizzae);
+    console.log(newPizz)
+    OrderNew.push(newPizz);
     console.log(OrderNew)
 
     $("#size").val("");
@@ -69,56 +65,46 @@ $("#checkout").click(function (event) {
         console.log(totalAmount)
     }
     
-    $("#ordersTaken").append("<tr>" + '<td scope="orderCalculation">' + 
-    newPizzae.pizzaSz () + newPizzae.pizzaSize + "</td>" + "<td>" +
-    newPizzae.pizzaCr () + newPizzae.pizzaCrust + "</td>" + "<td>" +
-    newPizzae.pizzaTp () + newPizzae.pizzaTopping + "</td>" + "<td>" + 
-    newPizzae.PizzaNumber + "</td>" + "<td>" +
-    newPizzae.totalPrice() + "</td>" + "</tr>"
+    $("#ordersTaken").append("<tr>" + '<td scope="orderList">' + 
+    newPizz.pizzaSz () + newPizz.pizzaSize + "</td>" + "<td>" +
+    newPizz.pizzaCr () + newPizz.pizzaCrust + "</td>" + "<td>" +
+    newPizz.pizzaTp () + newPizz.pizzaTopping + "</td>" + "<td>" + 
+    newPizz.PizzaNumber + "</td>" + "<td>"
     );
 
     $("#ordersTaken").append("");
     if (OrderNew.length > 0) {
-        $("#form-heading").empty();
         $("#form-heading").append("Make A New Order");
     }
-    $("#totalAmount").empty();
     $("#totalAmount").append(totalAmount);
   });
 
-  $("#Checkout").click(function () {
-  $(".checkout-info").show();
+  $("#checkout").click(function () {
   });
 
-  $("#checkoutForm").submit(function (event) {
+  $("#deliveryForm").submit(function (event) {
   event.preventDefault();
   var name = $("#name").val();
-  var deliveryOption = $("#OptionDelivery").val();
+  var deliveryOption = $("#deliveryOption").val();
   NameOfCustomer = name;
   $("#name").val("");
-  $("#OptionDelivery").val("");
-  $("#totalAmount").empty();
-  
+  $("#deliveryOption").val("");
+
   if (deliveryOption === "deliver") {
-    $("#totalAmount").empty();
     $("#delivery-cost").append(250);
     totalAmount += 250;
-    $("#totalAmount").empty();
-    $("#totalAmount").empty();
-  $("#totalAmount").append(totalAmount);
+    $("#totalAmount").append(totalAmount);
   } 
   else {
-    alert(+"Dear Customer, " + ": Your total bill is Ksh. " + totalAmount + ".Collect your order in the next 20 minutes." + " Your Tag Name is " + NameOfCustomer);
+    alert(+ "Dear Customer, " + " your total bill is Ksh. " + totalAmount + " Collect your order in the next 20 minutes." + " Your Tag Name is " + NameOfCustomer);
   }
   });
-
   $("#locationForm").submit(function (event) {
   event.preventDefault();
   var locationEntered = $("location").val();
   var mobileEntered = $("#mobilenumb").val();
   location = locationEntered;
   mobileNumb = mobileEntered;
-  $("#totalAmount").empty();
   $("#totalAmount").append(totalAmount);
-  alert("Dear Customer"  + ": Your new total bill is Ksh. " + totalAmount + ". Your order will be delivered in the next one hour." + " Payment on delivery!!.");
+  alert(+ "Dear Customer"  + ", your new total bill is Ksh. " + totalAmount + ". Your order will be delivered in the next one hour." + " Payment on delivery!!");
   });
